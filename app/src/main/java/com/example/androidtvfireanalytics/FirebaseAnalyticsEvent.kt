@@ -22,11 +22,11 @@ class FirebaseAnalyticsEvent {
 
         if (context != null) {
             val firebaseAnalytics = FirebaseAnalytics.getInstance(context)
-//            param.putString("image_name", name)
-//            param.putString("full_text", "text")
-//            firebaseAnalytics.logEvent("share_image",param)
+            param.putString("full_text", "text")
+            param.putString("画面ID", "NameText")
+            param.putString("画面タイトル", "NameClassText")
+
             firebaseAnalytics.logEvent(FirebaseAnalytics.Event.LOGIN, param)
-//            firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, param)
         }
     }
 }
